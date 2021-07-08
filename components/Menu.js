@@ -42,4 +42,12 @@ function menuMaker(items) {
     li.textContent = item;
     ul.appendChild(li);
   }); 
+  
+  let menuButton = document.querySelector("menu-button");
+  menuButton.addEventListener("click", (event) => {
+    let menuDiv = document.querySelector("div.menu");
+    menuDiv.classList.toggle("menu--open");
+  });
+
+  return menuDiv;
 }
