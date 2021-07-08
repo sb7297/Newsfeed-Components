@@ -43,7 +43,7 @@ function menuMaker(items) {
     ul.appendChild(li);
   }); 
   
-  let menuButton = document.querySelector("menu-button");
+  let menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener("click", (event) => {
     let menuDiv = document.querySelector("div.menu");
     menuDiv.classList.toggle("menu--open");
