@@ -51,3 +51,7 @@ function menuMaker(items) {
 
   return menuDiv;
 }
+
+let menu = menuMaker(menuItems);
+let header = document.querySelector(".header");
+header.appendChild(menu);
