@@ -144,12 +144,12 @@ function articleMaker(article) {
   button.classList.add("expandButton");
   button.textContent = "+";
   button.addEventListener("click", (event) => {
-    event.target.classList.toggle("article-open");
+    event.target.parentElement.classList.toggle("article-open");
   });
   articleNode.appendChild(button);
   
   return articleNode;
-}}
+}
 
 let articlesDiv = document.querySelector("div.articles");
 data.forEach((article) => {
