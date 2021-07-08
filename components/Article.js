@@ -143,6 +143,9 @@ function articleMaker(article) {
   let button = document.createElement("span");
   button.classList.add("expandButton");
   button.textContent = "+";
+  button.addEventListener("click", (event) => {
+    event.target.classList.toggle("article-open");
+  });
   articleNode.appendChild(button);
   
   return articleNode;
