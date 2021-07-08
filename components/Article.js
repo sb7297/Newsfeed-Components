@@ -149,4 +149,9 @@ function articleMaker(article) {
   articleNode.appendChild(button);
   
   return articleNode;
-}
+}}
+
+let articlesDiv = document.querySelector("div.articles");
+data.forEach((article) => {
+  articlesDiv.appendChild(articleMaker(article));
+});
